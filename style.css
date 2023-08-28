@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass';
+    background: var(--Very-Dark-Blue);
+}
+
+:root {
+    --White:-hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+
+    --Orange: hsl(25, 97%, 53%);
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    background: var(--Dark-Blue);
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+}
+
+.circle {
+    padding: 1rem;
+    height: 1rem;
+    width: 1rem;
+    background: var(--Very-Dark-Blue);
+    border-radius: 50%;
+}
+
+.container p {
+    color: var(--Light-Grey);
+    font-weight: 400;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.flex button {
+    padding: 1rem;
+    background: var(--Very-Dark-Blue);
+    text-align: center;
+    color: var(--Light-Grey);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.flex button:hover,
+.flex button:focus-within {
+    background: var(--Orange);
+    color: white;
+}
+
+.flex button:focus {
+    background: var(--Medium-Grey);
+}
+
+button {
+    width: 100%;
+    margin-block: 1rem;
+    padding: .8rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-family: inherit;
+    background: var(--Orange);
+    color: white;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+button:hover,
+button:focus-within {
+    background: white;
+    color: var(--Orange);
+}
+
+.thank-you-ctn {
+    padding: 2rem;
+    text-align: center;
+}
+
+.thank-you-ctn h3 {
+    color: var(--Orange);
+    background: var(--Very-Dark-Blue);
+    border-radius: 20px;
+    padding: .5rem;
+    font-size: .8rem;
+}
